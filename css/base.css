@@ -114,7 +114,7 @@ body {
   display: flex;
   flex-direction: column;
   place-items: center;
-  background-image: url("../img/");
+  background-image: url("../img/intro_bckg.webp");
   background-repeat: no-repeat;
 }
 .intro .title {
