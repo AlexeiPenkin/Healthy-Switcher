@@ -34,19 +34,58 @@ html {
   src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Helvetica Neue";
   src: url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Helvetica Neue";
   src: url("../fonts/HelveticaNeueCyr-Black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -54,6 +93,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
   font-family: "Inter", sans-serif;
   font-family: "Roboto", sans-serif;
 }
@@ -81,11 +121,11 @@ body {
   margin: 0 auto;
 }
 .header .logo {
-    cursor: pointer;
-    transition: transform .2s ease-in;
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
 }
 .header .logo:active {
-    transform: scale(.95);
+  transform: scale(0.95);
 }
 .header .navbar {
   display: flex;
@@ -102,8 +142,8 @@ body {
   transition: transform 0.2s ease-in;
 }
 .header .navbar-link:hover {
-    color: #34c759;
-  }
+  color: #34c759;
+}
 .header .navbar-link:active {
   transform: scale(0.9);
 }
@@ -575,7 +615,7 @@ body {
 .rating {
   width: 120px;
   height: 19px;
-  background-image: url('../img/card_stars-disabled.webp');
+  background-image: url("../img/card_stars-disabled.webp");
   background-repeat: no-repeat;
 }
 .rating-count {
@@ -610,12 +650,12 @@ body {
 }
 
 .dishes .card {
-    position: relative;
-    transition: all 0.3s ease-in;
+  position: relative;
+  transition: all 0.3s ease-in;
 }
 .dishes .card:hover {
   cursor: pointer;
-  border: 1px solid rgb(52, 199, 89, .2);
+  border: 1px solid rgb(52, 199, 89, 0.2);
   border-radius: 6px;
   box-shadow: 0px 6px 8px rgba(255, 255, 255, 0.1);
   transform: scale(1.07);
@@ -628,14 +668,14 @@ body {
   color: #252525;
 }
 .card-pic-arrow {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    cursor: pointer;
-    transition: all 0.3s ease-in;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
 }
 .card-pic-arrow:active {
-    transform: scale(.9);
+  transform: scale(0.9);
 }
 
 /* Chefs */
@@ -699,7 +739,7 @@ body {
 }
 .chef__card:hover {
   cursor: pointer;
-  border: 1px solid rgb(52, 199, 89, .2);
+  border: 1px solid rgb(52, 199, 89, 0.2);
   background: #252525;
   box-shadow: 0px 6px 8px rgba(255, 255, 255, 0.1);
   padding: 5px;
@@ -1245,11 +1285,11 @@ body {
 
 /* Footer */
 .footer {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    background: #252525;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  background: #252525;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 .footer .info {
   display: flex;
@@ -1291,34 +1331,34 @@ body {
   color: rgb(255, 255, 255, 0.5);
 }
 .footer .line {
-    width: 100%;
-    height: 2px;
-    background: #303030;
-    margin-bottom: 30px;
+  width: 100%;
+  height: 2px;
+  background: #303030;
+  margin-bottom: 30px;
 }
 .footer .logo {
-    width: 207px;
-    height: 24px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    transition: transform .2s ease-in;
+  width: 207px;
+  height: 24px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in;
 }
 .footer .logo:active {
-    transform: scale(.95);
+  transform: scale(0.95);
 }
 .footer .copyright {
-    font-family: 'Helvetica Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #737373;
-    margin-bottom: 30px;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #737373;
+  margin-bottom: 30px;
 }
 .footer .copyright span:hover {
-    cursor: pointer;
-    color: yellow;
+  cursor: pointer;
+  color: yellow;
 }
