@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
-	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <meta charset="UTF-8">
+    <title>FIGMA | Макеты для верстки — Верстка страницы</title>
+    <meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
 </head>
 <body>
 
@@ -15,18 +19,549 @@
         </a>
         <div>
             <p>
-                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
+                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a
+                    href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
             </p>
             <p>
-                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь получил оплату за верстку этого макета.
+                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a>
+                пользователь получил оплату за верстку этого макета.
             </p>
         </div>
     </div>
     <!-- Конец -->
 
     <div class="main">
-        В данном блоке размещается верстка
-    </div>
 
+        <header class="header">
+            <div class="container">
+                <img src="./img/header_logo.svg" alt="icon" class="logo">
+                <nav class="navbar">
+                    <a href="" class="navbar-link">Menu</a>
+                    <a href="" class="navbar-link">Recipes</a>
+                    <a href="" class="navbar-link">Chefs</a>
+                    <a href="" class="navbar-link">Contacts</a>
+                </nav>
+            </div>
+        </header>
+
+        <section class="intro">
+            <h1 class="title">Your <span>favourite food</span> delivered <span>hot & fresh</span></h1>
+            <p class="text">
+                HEALTHY SWITCHER chefs do all the prep work, like peeling, chopping & marinating, so you can cook a
+                fresh homemade dinner in just 15 minutes.
+            </p>
+            <button class="button">Order Now</button>
+            <div class="info">
+                <div class="item item-time">
+                    <img src="./img/intro_icon-watches.svg" alt="icon" class="item__icon">
+                    <p class="item__text">Today 10:00 am - 7:00 pm</p>
+                    <p class="item__label">Working hours</p>
+                </div>
+
+                <div class="item item-address ">
+                    <img src="./img/intro_icon-arrow.svg" alt="icon" class="item__icon">
+                    <p class="item__text">Velyka Vasylkivska 100</p>
+                    <p class="item__label">Get Directions</p>
+                </div>
+
+                <div class="item item-phone">
+                    <img src="./img/intro_icon-phone.svg" alt="icon" class="item__icon">
+                    <p class="item__text">+38 (063)833 24 15</p>
+                    <p class="item__label">Call Online</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="heading heading-about">
+                <h2 class="title heading-about">The Basics Of Healthy Food</h2>
+                <p class="title-bckg title-bckg-about">ABOUT</p>
+            </div>
+            <p class="about__text">
+                In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea aliquip aliquip consectetur
+                voluptate est. Eu minim dolore laboris enim mollit voluptate irure esse aliquip.
+            </p>
+            <div class="carousel">
+                <img src="./img/slider_arrow_prev.svg" alt="icon" class="slider__arrow prev" id="prev">
+                <div id="viewport">
+                    <div class="slider" style="left: 0">
+                        <div class="slide"><img src="./img/slider-pic_thumb (1).png" alt="img"></div>
+                        <div class="slide"><img src="./img/slider-pic_thumb (2).png" alt="img"></div>
+                        <div class="slide"><img src="./img/slider-pic_thumb (3).png" alt="img"></div>
+                        <div class="slide"><img src="./img/slider-pic_thumb (4).png" alt="img"></div>
+                        <div class="slide"><img src="./img/slider-pic_thumb (5).png" alt="img"></div>
+                        <div class="slide"><img src="./img/slider-pic_thumb (6).png" alt="img"></div>
+                    </div>
+                </div>
+                <img src="./img/slider_arrow_next.svg" alt="icon" class="slider__arrow next" id="next">
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="heading heading-work">
+                <h2 class="title title-work">How It Works</h2>
+                <p class="title-bckg title-bckg-work">WORK</p>
+            </div>
+            <div class="heading-green-line"></div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card__wrapper">
+                        <h3 class="card__title">Pick Meals</h3>
+                        <div class="card-green-line"></div>
+                        <p class="card__text">
+                            Choose your meals from our diverse weekly menu. Find gluten or dairy free, low carb & veggie
+                            options.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__wrapper">
+                        <h3 class="card__title">Choose how often</h3>
+                        <div class="card-green-line"></div>
+                        <p class="card__text">
+                            Our team of chefs do the prep work - no more chopping, measuring, or sink full of dishes!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__wrapper">
+                        <h3 class="card__title">fast deliveries</h3>
+                        <div class="card-green-line"></div>
+                        <p class="card__text">
+                            Your freshly prepped 15-min dinner kits arrive on your doorstep in a refrigerated box.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__wrapper">
+                        <h3 class="card__title">tasty meals</h3>
+                        <div class="card-green-line"></div>
+                        <p class="card__text">
+                            Gobble makes cooking fast, so you have more time to unwind and be with family.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dishes">
+            <div class="heading heading-dishes">
+                <h2 class="title title-dishes">Dish Of The Day</h2>
+                <p class="title-bckg title-bckg-dishes">DISHES</p>
+            </div>
+            <div class="heading-green-line"></div>
+            <div class="cards">
+                <div class="card">
+                    <img src="./img/card-pic-arrow.svg" alt="icon" class="card-pic-arrow">
+                    <img src="./img/card-pic_1_thumb.png" onclick="openPopup();currentSlide(1)" alt="img"
+                        class="card-pic">
+                    <div class="card__info">
+                        <div class="card__wrapper">
+                            <p class="card__heading">Featured Meal</p>
+                            <p class="card__subheading">Served with french fries + drink</p>
+                            <p class="card__text">
+                                Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender
+                                crisp patty and more...
+                            </p>
+                            <div class="card__rating">
+                                <div class="rating"></div>
+                                <!-- <img src="./img/card-stars-active.png" alt="img" class="rating"> -->
+                                <p class="rating-count">12</p>
+                                <button class="order-btn">order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/card-pic-arrow.svg" alt="icon" class="card-pic-arrow">
+                    <img src="./img/card-pic_2_thumb.png" onclick="openPopup();currentSlide(2)" alt="img"
+                        class="card-pic">
+                    <div class="card__info">
+                        <div class="card__wrapper">
+                            <p class="card__heading">Featured Meal</p>
+                            <p class="card__subheading">Served with french fries + drink</p>
+                            <p class="card__text">
+                                Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender
+                                crisp patty and more...
+                            </p>
+                            <div class="card__rating">
+                                <div class="rating"></div>
+                                <!-- <img src="./img/card_stars-disabled.png" alt="img" class="rating"> -->
+                                <p class="rating-count">12</p>
+                                <button class="order-btn">order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/card-pic-arrow.svg" alt="icon" class="card-pic-arrow">
+                    <img src="./img/card-pic_3_thumb.png" onclick="openPopup();currentSlide(3)" alt="img"
+                        class="card-pic">
+                    <div class="card__info">
+                        <div class="card__wrapper">
+                            <p class="card__heading">Featured Meal</p>
+                            <p class="card__subheading">Served with french fries + drink</p>
+                            <p class="card__text">
+                                Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender
+                                crisp patty and more...
+                            </p>
+                            <div class="card__rating">
+                                <div class="rating"></div>
+                                <!-- <img src="./img/card_stars-disabled.png" alt="img" class="rating"> -->
+                                <p class="rating-count">12</p>
+                                <button class="order-btn">order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/card-pic-arrow.svg" alt="icon" class="card-pic-arrow">
+                    <img src="./img/card-pic_4_thumb.png" onclick="openPopup();currentSlide(4)" alt="img"
+                        class="card-pic">
+                    <div class="card__info">
+                        <div class="card__wrapper">
+                            <p class="card__heading">Featured Meal</p>
+                            <p class="card__subheading">Served with french fries + drink</p>
+                            <p class="card__text">
+                                Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender
+                                crisp patty and more...
+                            </p>
+                            <div class="card__rating">
+                                <div class="rating"></div>
+                                <!-- <img src="./img/card_stars-disabled.png" alt="img" class="rating"> -->
+                                <p class="rating-count">12</p>
+                                <button class="order-btn">order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/card-pic-arrow.svg" alt="icon" class="card-pic-arrow">
+                    <img src="./img/card-pic_5_thumb.png" onclick="openPopup();currentSlide(5)" alt="img"
+                        class="card-pic">
+                    <div class="card__info">
+                        <div class="card__wrapper">
+                            <p class="card__heading">Featured Meal</p>
+                            <p class="card__subheading">Served with french fries + drink</p>
+                            <p class="card__text">
+                                Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender
+                                crisp patty and more...
+                            </p>
+                            <div class="card__rating">
+                                <div class="rating"></div>
+                                <!-- <img src="./img/card_stars-disabled.png" alt="img" class="rating"> -->
+                                <p class="rating-count">12</p>
+                                <button class="order-btn">order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/card-pic-arrow.svg" alt="icon" class="card-pic-arrow">
+                    <img src="./img/card-pic_6_thumb.png" onclick="openPopup();currentSlide(6)" alt="img"
+                        class="card-pic">
+                    <div class="card__info">
+                        <div class="card__wrapper">
+                            <p class="card__heading">Featured Meal</p>
+                            <p class="card__subheading">Served with french fries + drink</p>
+                            <p class="card__text">
+                                Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender
+                                crisp patty and more...
+                            </p>
+                            <div class="card__rating">
+                                <div class="rating"></div>
+                                <!-- <img src="./img/card-stars-active.png" alt="img" class="rating"> -->
+                                <p class="rating-count">12</p>
+                                <button class="order-btn">order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closePopup()">&times;</span>
+                <div class="modal-content">
+                    <img src="./img/card-pic_1_full.jpeg" class="mySlide">
+                    <img src="./img/card-pic_2_full.jpeg" class="mySlide">
+                    <img src="./img/card-pic_3_full.jpeg" class="mySlide">
+                    <img src="./img/card-pic_4_full.jpeg" class="mySlide">
+                    <img src="./img/card-pic_5_full.jpeg" class="mySlide">
+                    <img src="./img/card-pic_6_full.jpeg" class="mySlide">
+                </div>
+            </div>
+        </section>
+
+        <section class="chefs">
+            <div class="heading heading-chefs">
+                <h2 class="title title-chefs">This Month's Chefs</h2>
+                <p class="title-bckg title-bckg-chefs">CHEFS</p>
+            </div>
+            <div class="heading-green-line"></div>
+            <div class="chefs__cards">
+                <div class="chef__card">
+                    <div class="chef__card-info">
+                        <img src="./img/chef_card-avatar_gregory.png" alt="avatar" class="chef__card-avatar">
+                        <div class="chef__card-personal">
+                            <p class="chef__card-name">Gregory Flores</p>
+                            <p class="chef__card-position">Chef of the cold</p>
+                        </div>
+                    </div>
+                    <div class="chef__card-gallery">
+                        <img src="./img/card-gallery-pic_big-gregory.png" alt="img" class="card-gallery-pic_big">
+                        <img src="./img/card-gallery-pic_small1-gregory.png" alt="img" class="card-gallery-pic_small">
+                        <img src="./img/card-gallery-pic_small2-gregory.png" alt="img" class="card-gallery-pic_small">
+                    </div>
+                </div>
+
+                <div class="chef__card">
+                    <div class="chef__card-info">
+                        <img src="./img/chef_card-avatar_annette.png" alt="avatar" class="chef__card-avatar">
+                        <div class="chef__card-personal">
+                            <p class="chef__card-name">Annette Cooper</p>
+                            <p class="chef__card-position">Chef of the hot</p>
+                        </div>
+                    </div>
+                    <div class="chef__card-gallery">
+                        <img src="./img/card-gallery-pic_big-annette.png" alt="img" class="card-gallery-pic_big">
+                        <img src="./img/card-gallery-pic_small1-annette.png" alt="img" class="card-gallery-pic_small">
+                        <img src="./img/card-gallery-pic_small2-annette.png" alt="img" class="card-gallery-pic_small">
+                    </div>
+                </div>
+
+                <div class="chef__card">
+                    <div class="chef__card-info">
+                        <img src="./img/chef_card-avatar_greg.png" alt="avatar" class="chef__card-avatar">
+                        <div class="chef__card-personal">
+                            <p class="chef__card-name">Greg Fox</p>
+                            <p class="chef__card-position">Сhef macro kitchen</p>
+                        </div>
+                    </div>
+                    <div class="chef__card-gallery">
+                        <img src="./img/card-gallery-pic_big-greg.png" alt="img" class="card-gallery-pic_big">
+                        <img src="./img/card-gallery-pic_small1-greg.png" alt="img" class="card-gallery-pic_small">
+                        <img src="./img/card-gallery-pic_small2-greg.png" alt="img" class="card-gallery-pic_small">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recipes">
+            <div class="heading heading-recipes">
+                <h2 class="title title-recipes">Recipes From Our Chefs</h2>
+                <p class="title-bckg title-bckg-recipes">RECIPES</p>
+            </div>
+            <div class="heading-green-line"></div>
+            <div class="recipes__container">
+                <div class="recipes__breakfast breakfast">
+                    <img src="./img/recipes_slider_arrow-back.png" alt="icon" class="slider__arrow-back">
+                    <span class="name name-breakfast">breakfast</span>
+                    <p class="date date-breakfast">05 Jul 2016</p>
+                    <p class="recipe__heading">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </p>
+                    <p class="recipe__author">Jason Keller</p>
+                    <div class="bottom-line bottom-line-breakfast">
+                        <div class="viewers-number">
+                            <img src="./img/viewers-icon.png" alt="icon" class="viewers-icon">
+                            <p class="viewers-count">275</p>
+                        </div>
+                        <div class="comments-number">
+                            <img src="./img/comments-icon.png" alt="icon" class="comments-icon">
+                            <p class="comments-count">12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsline">
+                    <div class="newsline__item lunch">
+                        <div class="newsline__item-wrapper">
+                            <p class="newsline__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                            </p>
+                            <div class="bottom-line bottom-line-newsline">
+                                <div class="block__date-name">
+                                    <p class="name name-item">lunch</p>
+                                    <p class="date date-item">07 Jan 2016</p>
+                                </div>
+                                <div class="block__statistics">
+                                    <div class="viewers-number">
+                                        <div class="viewers__icon"></div>
+                                        <p class="viewers__count">275</p>
+                                    </div>
+                                    <div class="comments-number">
+                                        <div class="comments__icon"></div>
+                                        <p class="comments__count">12</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newsline__item dinner">
+                        <div class="newsline__item-wrapper">
+                            <p class="newsline__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                            </p>
+                            <div class="bottom-line bottom-line-newsline">
+                                <div class="block__date-name">
+                                    <p class="name name-item">dinner</p>
+                                    <p class="date date-item">07 Jan 2016</p>
+                                </div>
+                                <div class="block__statistics">
+                                    <div class="viewers-number">
+                                        <div class="viewers__icon"></div>
+                                        <p class="viewers__count">275</p>
+                                    </div>
+                                    <div class="comments-number">
+                                        <div class="comments__icon"></div>
+                                        <p class="comments__count">12</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newsline__item sweets">
+                        <div class="newsline__item-wrapper">
+                            <p class="newsline__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                            </p>
+                            <div class="bottom-line bottom-line-newsline">
+                                <div class="block__date-name">
+                                    <p class="name name-item">sweets</p>
+                                    <p class="date date-item">07 Jan 2016</p>
+                                </div>
+                                <div class="block__statistics">
+                                    <div class="viewers-number">
+                                        <div class="viewers__icon"></div>
+                                        <p class="viewers__count">275</p>
+                                    </div>
+                                    <div class="comments-number">
+                                        <div class="comments__icon"></div>
+                                        <p class="comments__count">12</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="social">
+            <div class="heading heading-social">
+                <h2 class="title title-social">We in Social</h2>
+                <p class="title-bckg title-bckg-social">SOCIAL</p>
+            </div>
+            <div class="heading-green-line"></div>
+            <div class="posts">
+                <div class="post">
+                    <div class="post__header">
+                        <div class="social-title">
+                            <a href="htpps://twitter.com" class="social-name" target="_blank">
+                                <img src="./img/social-icon_twitter.png" alt="icon" class="social-icon twitter">
+                            </a>
+                            <a href="htpps://twitter.com" class="social-name" target="_blank">
+                                Twitter
+                            </a>
+                        </div>
+                        <button class="post-btn">follow us</button>
+                    </div>
+                    <div class="post__line"></div>
+                    <div class="post__wrapper">
+                        <div class="post__date">24 Jun at 16:20 pm</div>
+                        <p class="post__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                        </p>
+                        <div class="post__author">@DennisFerguson</div>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post__header">
+                        <div class="social-title">
+                            <a href="htpps://instagram.com" class="social-name" target="_blank">
+                                <img src="./img/social-icon_twitter.png" alt="icon" class="social-icon twitter">
+                            </a>
+                            <a href="htpps://instagram.com" class="social-name" target="_blank">
+                                Instagram
+                            </a>
+                        </div>
+                        <button class="post-btn">FOLLOW US</button>
+                    </div>
+                    <div class="post__line"></div>
+
+                    <div class="post__grid">
+                        <img src="./img/post_grid-btn.png" alt="icon" class="post__grid-btn">
+                        <img src="./img/post_grid-pic_1.png" alt="img" class="post__grid-pic">
+                        <img src="./img/post_grid-pic_2.png" alt="img" class="post__grid-pic">
+                        <img src="./img/post_grid-pic_3.png" alt="img" class="post__grid-pic">
+                        <img src="./img/post_grid-pic_4.png" alt="img" class="post__grid-pic">
+                        <img src="./img/post_grid-pic_5.png" alt="img" class="post__grid-pic">
+                        <img src="./img/post_grid-pic_6.png" alt="img" class="post__grid-pic">
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post__header">
+                        <div class="social-title">
+                            <a href="htpps://facebook.com" class="social-name" target="_blank">
+                                <img src="./img/social-icon_twitter.png" alt="icon" class="social-icon twitter">
+                            </a>
+                            <a href="htpps://facebook.com" class="social-name" target="_blank">
+                                Facebook
+                            </a>
+                        </div>
+                        <button class="post-btn">FOLLOW US</button>
+                    </div>
+                    <div class="post__line"></div>
+                    <div class="post__wrapper">
+                        <div class="post__date">26 Jun at 16:20 pm</div>
+                        <p class="post__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="info">
+                <div class="item item-time">
+                    <img src="./img/intro_icon-watches.svg" alt="icon" class="item__icon">
+                    <p class="item__text">Today 10:00 am - 7:00 pm</p>
+                    <p class="item__label">Working hours</p>
+                </div>
+
+                <div class="item item-address ">
+                    <img src="./img/intro_icon-arrow.svg" alt="icon" class="item__icon">
+                    <p class="item__text">Velyka Vasylkivska 100</p>
+                    <p class="item__label">Get Directions</p>
+                </div>
+
+                <div class="item item-phone">
+                    <img src="./img/intro_icon-phone.svg" alt="icon" class="item__icon">
+                    <p class="item__text">+38 (063)833 24 15</p>
+                    <p class="item__label">Call Online</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <a href="#" class="logo">
+                <img src="./img/header_logo.svg" alt="icon" class="logo">
+            </a>
+            <p class="copyright">© Designed by<span>Yellow Snow</span>. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
