@@ -114,7 +114,7 @@ body {
   display: flex;
   flex-direction: column;
   place-items: center;
-  background-image: url("../img/intro_bckg.png");
+  background-image: url("../img/");
   background-repeat: no-repeat;
 }
 .intro .title {
@@ -575,7 +575,7 @@ body {
 .rating {
   width: 120px;
   height: 19px;
-  background-image: url('../img/card_stars-disabled.png');
+  background-image: url('../img/card_stars-disabled.webp');
   background-repeat: no-repeat;
 }
 .rating-count {
@@ -611,6 +611,7 @@ body {
 
 .dishes .card {
     position: relative;
+    transition: all 0.3s ease-in;
 }
 .dishes .card:hover {
   cursor: pointer;
@@ -620,7 +621,7 @@ body {
   transform: scale(1.07);
 }
 .dishes .card:hover .rating {
-  background-image: url("../img/card-stars-active.png");
+  background-image: url("../img/card-stars-active.webp");
 }
 .dishes .card:hover .order-btn {
   background: #34c759;
@@ -805,7 +806,7 @@ body {
   flex-direction: column;
   width: 540px;
   height: 510px;
-  background-image: url("../img/recipes_breakfast-bckg.png");
+  background-image: url("../img/recipes_breakfast-bckg.webp");
   background-repeat: no-repeat;
 }
 .slider__arrow-back {
@@ -923,7 +924,7 @@ body {
   transform: scale(1.06);
 }
 .newsline__item.dinner {
-  background-image: url("../img/newsline_item-dinner.png");
+  background-image: url("../img/newsline_item-dinner.webp");
   background-repeat: no-repeat;
 }
 .newsline__item.dinner:hover {
@@ -1001,12 +1002,12 @@ body {
 .viewers__icon {
   width: 22px;
   height: 30px;
-  background-image: url("../img/viewers-icon.png");
+  background-image: url("../img/viewers-icon.webp");
   background-repeat: no-repeat;
   background-position: center;
 }
 .newsline__item:hover .viewers__icon {
-  background-image: url("../img/viewers-icon_hover-black.png");
+  background-image: url("../img/viewers-icon_hover-black.webp");
   background-repeat: no-repeat;
 }
 .viewers__count,
@@ -1028,12 +1029,12 @@ body {
 .comments__icon {
   width: 20px;
   height: 20px;
-  background-image: url("../img/comments-icon.png");
+  background-image: url("../img/comments-icon.webp");
   background-repeat: no-repeat;
   background-position: center;
 }
 .newsline__item:hover .comments__icon {
-  background-image: url("../img/comments-icon_hover-black.png");
+  background-image: url("../img/comments-icon_hover-black.webp");
   background-repeat: no-repeat;
 }
 .newsline__item:hover .viewers__count,
