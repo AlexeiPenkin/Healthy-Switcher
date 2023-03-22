@@ -667,6 +667,11 @@ body {
   background: #34c759;
   color: #252525;
 }
+.dishes .card-pic {
+    width: 350px;
+    height: 270px;
+    border-radius: 6px 6px 0 0;
+}
 .card-pic-arrow {
   position: absolute;
   top: 24px;
